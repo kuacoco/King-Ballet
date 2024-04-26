@@ -9,6 +9,7 @@
         * {
             margin: 0;
             padding: 0;
+            text-decoration: none;
         }
 
         .container {
@@ -22,8 +23,8 @@
         .movie {
             background-color: #f4f4f4;
             box-shadow: 0 0 10px #f4f4f4;
-            width: 400px;
-            height: 300px;
+            width: 300px;
+            height: 200px;
             position: relative;
             border-radius: 10px;
         }
@@ -38,19 +39,23 @@
         }
 
         .title {
-            margin-top: 100px;
-            height: 100px;
+            margin-top: 40px;
+            height: 200px;
             line-height: 40px;
             text-align: center;
-            backdrop-filter: blur(10px);
-            font-size: 18px;
+            font-size: 20px;
             color: #fff;
+        }
+
+        .text {
+            height: 40px;
+            backdrop-filter: blur(10px);
         }
 
         .title-wrapper img {
             display: block;
-            height: 50px;
-            width: 50px;
+            height: 80px;
+            width: 80px;
             margin: 0 auto;
         }
     </style>
@@ -58,25 +63,42 @@
 
 <body>
     <div class="container" id="app">
-        <div class="movie" v-for="movie in movies">
+        <div class="movie" v-for="movie in movies" :style="{'background-color': movie.bgColor}">
             <div class="title-wrapper">
-                <div class="title">
-                    {{movie.title}}
-                    <a :href="movie.href" target="_blank"><img src="./play.png"></a>
-                </div>
+                <a :href="movie.href" target="_blank">
+                    <div class="title">
+                        <div class="text">{{movie.title}}</div>
+                        <img src="./play.png">
+                    </div>
+                </a>
             </div>
-            <video :src=" movie.href" class="video" width="400" height="300"></video>
+            <!-- <video :src=" movie.href" class="video" width="400" height="300"></video> -->
         </div>
     </div>
 </body>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script type="module">
-    import movies from './data.js'
+    import data from './data.js'
+
+    function getRandomIntInclusive(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // 包含最小值和最大值
+    }
 
     const { createApp } = Vue
 
+    const randomColor = () => {
+        return `rgb(${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)}, ${getRandomIntInclusive(0, 255)})`
+    }
+
+
     createApp({
         data() {
+            const movies = data.map(d => {
+                d.bgColor = randomColor()
+                return d
+            })
             return {
                 movies
             }
