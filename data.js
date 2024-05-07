@@ -1,5 +1,9 @@
 export default [
     {
+        "title": "天鹅舞步",
+        "href": "https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202405/baae83bf5ef4464f9416a9c40341ae86.mp4"
+    },
+    {
         "title": "魔法舞会",
         "href": "https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202404/62deabd0a67940dd9f7512be31d428a8.mp4"
     },
