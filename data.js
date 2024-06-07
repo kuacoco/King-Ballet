@@ -1,5 +1,9 @@
 export default [
   {
+    title: '行礼',
+    href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202406/2cf87d623913493f9e5bb0502f6cbce8.mp4',
+  },
+  {
     title: '美好的阿伦戴尔王国',
     href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202405/93f1f8c4ae6e4243a6d19a400e493c5b.mp4',
   },
@@ -16,8 +20,8 @@ export default [
     href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202404/a67005cc335e49b3b84ee53fd6ffcd32.mp4',
   },
   {
-    title: '雪宝的诞生（单一）',
-    href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202404/899a0d009ff348c88484b7ea84b4bb2b.mp4',
+    title: '雪宝的诞生',
+    href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202406/b591bf6217e44041a50512f3e2bf76fa.mp4',
   },
   {
     title: '扔雪球',
