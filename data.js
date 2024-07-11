@@ -1,5 +1,9 @@
 export default [
   {
+    title: '梦幻天鹅湖',
+    href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202406/57dc961cea6e457f8856882aa2f8fe43.mp4',
+  },
+  {
     title: '行礼',
     href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202406/2cf87d623913493f9e5bb0502f6cbce8.mp4',
   },
