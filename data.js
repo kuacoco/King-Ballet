@@ -1,5 +1,9 @@
 export default [
   {
+    title: '舞出冰雪外衣',
+    href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202412/c4d10a29dcc644be926530b74acf46e6.mp4',
+  },
+  {
     title: '雪宝抱抱',
     href: 'https://cdn08.xiaogj.com/file/dc6b12a64c8e426f86df6f7f039a5720/202412/885c9a3b9c344dc593914803dac7eb3e.mp4',
   },
